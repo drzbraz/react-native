@@ -60,8 +60,11 @@ export default function App() {
     if (t.length > 0) {
       const novaTarefa = {
         id: Math.random().toString(),
-        descricao: t
+        musica: t.musica,
+        artista: t.artista,
+        url: t.url
       }
+
       setTarefas([...tarefas, novaTarefa])
     }
   }
@@ -82,11 +85,29 @@ export default function App() {
             <Route
               path="/"
               element={
-                <Tarefas tarefas={tarefas} onAdiciona={adicionaTarefa} onAltera={alteraTarefa} onApaga={apagaTarefa} />
+                <Tarefas
+                  tarefas={[
+                    {
+                      id: Math.random().toString(),
+                      musica: 'testaa1',
+                      artista: 'test',
+                      url: 'url'
+                    },
+                    {
+                      id: Math.random().toString(),
+                      musica: 'testaa2',
+                      artista: 'test',
+                      url: 'urla'
+                    }
+                  ]}
+                  onAdiciona={adicionaTarefa}
+                  onAltera={alteraTarefa}
+                  onApaga={apagaTarefa}
+                />
               }
             />
             <Route path="/sobre" element={<Sobre />} />
-            <Route path="/musica" element={<NovaMusica tarefas={tarefas} />} />
+            <Route path="/musica" element={<NovaMusica onAdiciona={adicionaTarefa} tarefas={tarefas} />} />
           </Routes>
         </View>
         <StatusBar style="light" />

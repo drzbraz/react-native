@@ -5,10 +5,15 @@ import Tarefa from './Tarefa'
 import { Link } from 'react-router-native'
 
 export default function NovaMusica(props) {
-  const [campo, setCampo] = useState('')
+  const [artista, setArtista] = useState('')
+  const [musica, setMusica] = useState('')
+  const [url, setUrl] = useState('')
+
   const adiciona = () => {
-    props.onAdiciona(campo)
-    setCampo('')
+    props.onAdiciona({ artista, musica, url })
+    setArtista('')
+    setMusica('')
+    setUrl('')
     Keyboard.dismiss()
   }
 
@@ -22,30 +27,32 @@ export default function NovaMusica(props) {
           <TextInput
             style={styles.input}
             placeholder="Artista"
-            defaultValue={campo}
-            onChangeText={(campo) => setCampo(campo)}
-            onSubmitEditing={adiciona}
+            value={artista}
+            onChangeText={(artista) => setArtista(artista)}
             onBlur={Keyboard.dismiss}
           />
           <TextInput
             style={styles.input}
             placeholder="Música"
-            defaultValue={campo}
-            onChangeText={(campo) => setCampo(campo)}
-            onSubmitEditing={adiciona}
+            value={musica}
+            onChangeText={(musica) => setMusica(musica)}
             onBlur={Keyboard.dismiss}
           />
           <TextInput
             style={styles.input}
             placeholder="Url"
-            defaultValue={campo}
-            onChangeText={(campo) => setCampo(campo)}
-            onSubmitEditing={adiciona}
+            value={url}
+            onChangeText={(url) => setUrl(url)}
             onBlur={Keyboard.dismiss}
           />
-          <Link to="/musica">
+          <TouchableOpacity onPress={() => adiciona()}>
             <View style={[styles.button, styles.primary]}>
               <Image source={require('../assets/plus1.png')} style={styles.buttonImg} />
+            </View>
+          </TouchableOpacity>
+          <Link to="/" style={styles.mt4}>
+            <View style={[styles.primary, { alignItems: 'center', borderWidth: 1, borderRadius: 15 }]}>
+              <Text style={{ padding: 20, fontSize: 20, color: 'white' }}>Voltar</Text>
             </View>
           </Link>
         </View>

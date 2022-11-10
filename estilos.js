@@ -122,7 +122,7 @@ export default StyleSheet.create({
     fontSize: 18,
     backgroundColor: 'white',
     width: '100%',
-    marginTop: 10
+    marginTop: 20
   },
 
   // botões
@@ -136,7 +136,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginRight: 2,
     marginLeft: 2,
-    marginTop: 25
+    marginTop: 25,
+    marginBottom: 25
   },
 
   buttonImg: {
