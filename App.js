@@ -85,25 +85,7 @@ export default function App() {
             <Route
               path="/"
               element={
-                <Tarefas
-                  tarefas={[
-                    {
-                      id: Math.random().toString(),
-                      musica: 'testaa1',
-                      artista: 'test',
-                      url: 'url'
-                    },
-                    {
-                      id: Math.random().toString(),
-                      musica: 'testaa2',
-                      artista: 'test',
-                      url: 'urla'
-                    }
-                  ]}
-                  onAdiciona={adicionaTarefa}
-                  onAltera={alteraTarefa}
-                  onApaga={apagaTarefa}
-                />
+                <Tarefas tarefas={tarefas} onAdiciona={adicionaTarefa} onAltera={alteraTarefa} onApaga={apagaTarefa} />
               }
             />
             <Route path="/sobre" element={<Sobre />} />
