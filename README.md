@@ -1,7 +1,35 @@
-# Tô Ferrado Híbrida (com recursos nativos)
+# Nome da aplicação e o seu próprio nome.
 
-Aplicação híbrida final de exemplo da disciplina **Tópicos Especiais em Sistemas de Informação - Aplicações Híbridas** da PUC Minas
+    App SpotiMy, aluno Daniel Dos Reis Braz
 
-Autor: Prof. Marcos Kutova
+# Descrição de um parágrafo explicando o que a aplicação faz.
 
-*Versão de 16/10/2021*
+    Aplicação mobile com o objetivo de armazenar as músicas favoritas do usuário, com o nome do artista, música e o link para ouvir.
+
+# Descrição de cada página ou tela, explicando as operações específicas a serem realizadas nela. Acrescente algumas imagens dessas interfaces.
+
+    A página inicial mostra a listagem de todas as musicas.
+    Página com listas preenchidas
+    Página para adicionar nova música
+    Página sobre o app
+
+# Explicação dos dados (da lista) que sua aplicação armazena.
+
+    A lista armazena objetos com atributos: artist, music e url.
+
+A aplicação é original e não uma cópia da aplicação de um colega ou de uma aplicação já existente?
+sim
+A aplicação tem pelo menos duas interfaces (telas ou páginas) independentes?
+sim
+A aplicação armazena e usa de forma relevante dados complexos (mais de um atributo)?
+sim
+A aplicação possui um manifesto para instalação no dispositivo do usuário?
+sim
+A aplicação possui um service worker que permite o funcionamento off-line?
+sim
+O código da minha aplicação possui comentários explicando cada operação?
+sim
+A aplicação está funcionando corretamente?
+sim
+A aplicação está completa?
+sim
