@@ -60,9 +60,7 @@ export default function App() {
     if (t.length > 0) {
       const novaTarefa = {
         id: Math.random().toString(),
-        musica: t.musica,
-        artista: t.artista,
-        url: t.url
+        musica: t
       }
 
       setTarefas([...tarefas, novaTarefa])

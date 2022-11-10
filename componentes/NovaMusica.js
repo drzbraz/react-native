@@ -10,7 +10,7 @@ export default function NovaMusica(props) {
   const [url, setUrl] = useState('')
 
   const adiciona = () => {
-    props.onAdiciona({ artista, musica, url })
+    props.onAdiciona(musica)
     setArtista('')
     setMusica('')
     setUrl('')
