@@ -18,18 +18,22 @@
     A lista armazena objetos com atributos: artist, music e url.
 
 A aplicação é original e não uma cópia da aplicação de um colega ou de uma aplicação já existente?
-sim
-A aplicação tem pelo menos duas interfaces (telas ou páginas) independentes?
-sim
-A aplicação armazena e usa de forma relevante dados complexos (mais de um atributo)?
-sim
-A aplicação possui um manifesto para instalação no dispositivo do usuário?
-sim
-A aplicação possui um service worker que permite o funcionamento off-line?
-sim
+Não
+A aplicação tem pelo menos duas interfaces (telas) independentes?
+Sim
+A aplicação armazena e usa de forma relevante dados complexos do usuário?
+Sim
+A aplicação tem pelo menos dois componentes além do componente principal?
+Sim
+A aplicação tem um componente com rolagem?
+Sim
+A aplicação tem um campo de formulário que é devidamente tratado?
+Não
+A aplicação foi desenvolvida com o React Native?
+Sim
 O código da minha aplicação possui comentários explicando cada operação?
-sim
+Não
 A aplicação está funcionando corretamente?
-sim
+Sim
 A aplicação está completa?
-sim
+Não
